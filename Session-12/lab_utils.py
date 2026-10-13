@@ -14,14 +14,6 @@ This module encapsulates:
 8. Multi-trial statistical capstone synthesis benchmarking (mean ± 1 std).
 """
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
-try:
-    import tensorflow as tf
-    tf.config.set_visible_devices([], 'GPU')
-except Exception:
-    pass
-
 import sys
 import time
 import warnings
