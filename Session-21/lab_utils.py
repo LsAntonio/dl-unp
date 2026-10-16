@@ -1,35 +1,7 @@
 """
 Session 21 Lab Utilities: Production Computer Vision Pipelines & Model Diagnostics
-Course: UNP Deep Learning Foundations — Unit II (Week 7, Session 21)
-Institutional Standard: MIT EECS / ETH Zürich D-INFK
-Instructors: MSc. Antonio Aguilar & Dr. Luis Aguilar Ibáñez
 
 This module encapsulates environment configuration, deterministic seed management,
-hardware telemetry, automated dataset ingestion, and visual diagnostic tools for Session 21:
-  1. set_seed: Enforce deterministic execution across CPU, CUDA, and CuDNN.
-  2. get_device: Compute device detection and VRAM hardware profiler.
-  3. setup_dataset: Automated dataset ingestion via official GitHub Releases CDN streamer.
-  4. verify_partitions: Partition verification & class-balance integrity audit.
-  5. plot_channel_histograms: Empirical RGB channel distribution visualization.
-  6. plot_transformed_images: Comparative evaluation and training transform visualization.
-  7. plot_augmentation_realizations: Stochastic augmentation realization generator.
-  8. plot_onecycle_schedule: Leslie Smith OneCycleLR schedule visualization.
-  9. plot_training_history: Diagnostic loss & accuracy progression curves.
-  10. plot_hardware_pipeline_comparison: Architectural diagram of CPU DataLoader vs. GPU In-Memory acceleration.
-  11. get_dataset_stats & get_sample_images: Empirical normalization parameters and sample loader.
-  12. CatDogCNN: Canonical 4-stage convolutional backbone with modern GAP classification head.
-  13. collect_predictions: Gather targets, predictions, and softmax probabilities across a DataLoader.
-  14. compute_metrics_table & print_metrics_comparison: Classification scorecard calculation and formatting.
-  15. plot_confusion_matrices: Dual training and validation confusion matrix heatmaps.
-  16. plot_validation_gallery: Sample predictions with Softmax confidence bars and audit table.
-  17. plot_failure_analysis: Qualitative analysis of top overconfident misclassified samples.
-  18. plot_conv1_weights: Visualize learned 32 RGB spatial filters in Conv1 layer.
-  19. plot_layer1_activations: Visualize Layer 1 spatial feature activation maps across 32 filters on sample inputs.
-  20. setup_dataloaders & GPUBatchLoader: High-throughput PyTorch DataLoaders & GPU in-memory VRAM streamers.
-
-Note on Visualizations:
-  All visualization functions render interactive plots directly in the notebook environment.
-  Figure saving to disk is disabled by default (save_path=None) for cloud environments like Google Colab.
 """
 
 import os
