@@ -136,8 +136,8 @@ DEFAULT_DATASET_URL = (
 def setup_dataset(
     data_root: Union[str, Path] = "./archive_v2",
     dataset_url: str = DEFAULT_DATASET_URL,
-    cache_candidates: Sequence[Path] = CACHE_CANDIDATES,
-    enable_local_cache: bool = ENABLE_LOCAL_CACHE,
+    cache_candidates: Sequence[Path] = None,
+    enable_local_cache: bool = None,
 ) -> Tuple[Path, Path, Path, Path]:
     """
     Ingests and validates the clean Cats vs. Dogs benchmark dataset.
